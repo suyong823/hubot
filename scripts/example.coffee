@@ -12,8 +12,11 @@
    robot.respond /test/i, (msg) ->
     msg.send "test!!!!!!"
 
-   robot.hear /プログラミング/, (msg) ->
+   robot.hear /プログラミング/i, (msg) ->
     msg.send "キミもエンジニアだね"
+
+    robot.hear /(sushi|すし|スシ|寿司)/i, (msg) ->
+    msg.send "スシが食べたい。”
 
 
   # robot.hear /badger/i, (res) ->
