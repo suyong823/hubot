@@ -12,6 +12,11 @@
    robot.respond /test/i, (msg) ->
     msg.send "test!!!!!!"
 
+ module.exports = (robot) ->
+   robot.hear /プログラミング/i, (msg) ->
+    msg.send "キミもエンジニアだね"
+
+
   # robot.hear /badger/i, (res) ->
   #   res.send "Badgers? BADGERS? WE DON'T NEED NO STINKIN BADGERS"
   #
