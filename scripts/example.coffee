@@ -8,7 +8,9 @@
 #
 #   These are from the scripting documentation: https://github.com/github/hubot/blob/master/docs/scripting.md
 
-#  module.exports = (robot) ->
+ module.exports = (robot) ->
+   robot.respond /test/i, (msg) ->
+    msg.send "test!!!!!!"
 
   # robot.hear /badger/i, (res) ->
   #   res.send "Badgers? BADGERS? WE DON'T NEED NO STINKIN BADGERS"
