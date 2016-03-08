@@ -13,7 +13,7 @@
     msg.send "test!!!!!!"
 
  module.exports = (robot) ->
-   robot.hear /プログラミング/i, (msg) ->
+   robot.hear /プログラミング/, (msg) ->
     msg.send "キミもエンジニアだね"
 
 
