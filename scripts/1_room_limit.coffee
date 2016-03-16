@@ -5,8 +5,8 @@ module.exports = (robot) ->
             msg.finish()
 
         hoge = msg.match[1]
-        room = "bottest"
+        room = "botlimit"
         if hoge == "@channel"
-          robot.send "らじゃ"
+            msg.send "らじゃ"
         else
-          robot.send "channel使って！"
+            msg.send "channel使って！"
