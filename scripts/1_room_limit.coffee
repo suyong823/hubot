@@ -1,12 +1,5 @@
+hello = process.env.HUBOT_HELLO
+
 module.exports = (robot) ->
-    robot.hear /(.*)/i, (msg) ->
-
-        unless _.contains ['botlimit'], msg.envelope.room
-            msg.finish()
-
-        hoge = msg.match[1]
-        room = "botlimit"
-        if hoge == "@channel"
-            msg.send "らじゃ"
-        else
-            msg.send "channel使って！"
+  robot.hear /hello/i, (msg) ->
+    msg.send "#{hello}, #{msg.message.user.name}"
