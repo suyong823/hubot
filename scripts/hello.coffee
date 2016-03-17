@@ -1,5 +1,3 @@
-
-
 module.exports = (robot) ->
-  robot.hear /hello/i, (msg) ->
+  robot.hear /(初めまして|はじめまして)/i, (msg) ->
     msg.send "よろしく！,@#{msg.message.user.name}"

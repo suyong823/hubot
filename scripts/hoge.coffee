@@ -16,10 +16,3 @@ module.exports = (robot) ->
 
     robot.hear /プログラミング/i, (msg) ->
         msg.send "キミもエンジニアだね"
-
-    robot.hear /はじめまして (.*)/i, (msg) ->
-        name = msg.match[1]
-        if name == "takashige"
-            msg.send "べ、別にあんたに挨拶なんかしたくないんだからねっ！"
-        else
-            msg.send "ちょりーっす、 #{name}"
