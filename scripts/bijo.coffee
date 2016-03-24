@@ -12,5 +12,7 @@ module.exports = (robot) ->
     	"http://wallpapers.wallhaven.cc/wallpapers/full/wallhaven-15047.jpg?#{timestamp}"
     	"http://wallpapers.wallhaven.cc/wallpapers/full/wallhaven-115196.jpg?#{timestamp}"
         "http://wallpapers.wallhaven.cc/wallpapers/full/wallhaven-315863.jpg?#{timestamp}"
-    	"http://wallpapers.wallhaven.cc/wallpapers/full/wallhaven-81895.jpg?#{timestamp}"
+        "http://wallpapers.wallhaven.cc/wallpapers/full/wallhaven-81895.jpg?#{timestamp}"
+        "http://wallpapers.wallhaven.cc/wallpapers/full/wallhaven-252111.jpg?#{timestamp}"
+    	"http://wallpapers.wallhaven.cc/wallpapers/full/wallhaven-83095.jpg?#{timestamp}"
     	]
