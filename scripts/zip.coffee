@@ -4,10 +4,11 @@
 #   郵便番号検索APIを使って郵便番号から住所を検索して返信します。
 #
 # Commands:
-#   zip zipcode　- zipcodeで住所を検索する
+#   zip <zipcode>　- zipcodeで住所を検索する
 #
 # Author:
 #   ねじこ
+
 get_value = (str, regexp) ->
   match = str.match(regexp)
   return "" unless match

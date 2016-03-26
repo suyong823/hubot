@@ -8,10 +8,10 @@
 #   None
 #
 # Commands:
-#   hubot bijin now - Hubot responds bijin-tokei URL of 'all japan'
-#   美人なう - 'hubot bijin now'と同じ。
-#   hubot bijin now [local] - Hubot responds bijin-tokei URL of 'local'
-#   美人なう、[local] - 'hubot bijin now [local]'と同じ。
+#   bijin now - responds bijin-tokei URL of 'all japan'
+#   美人なう - 'bijin now'と同じ。
+#   bijin now [local] - responds bijin-tokei URL of 'local'
+#   美人なう、[local] - 'bijin now [local]'と同じ。
 #
 # Notes:
 #   システムのタイムゾーンに関わらず、日本時間の時刻を返す。
@@ -127,7 +127,7 @@ convertLocal = (local, conv_list) ->
   return local
 
 module.exports = (robot) ->
-  robot.respond /bijin\s+now$/i, (msg) ->
+  robot.hear /bijin\s+now$/i, (msg) ->
     date = new Date
     message = "現在の時刻は#{strTime(date)}です。[全国版]"
     image_url = "#{BASE_URL}/jp/pc/#{hhmmTime(date)}.#{PICT_EXT}"
@@ -140,7 +140,7 @@ module.exports = (robot) ->
     image_url = "#{BASE_URL}/#{localSignature}/pc/#{hhmmTime(date)}.#{PICT_EXT}"
     msg.send "#{message}\n#{image_url}"
 
-  robot.respond /bijin\s+now\s+(.+)$/i, (msg) ->
+  robot.hear /bijin\s+now\s+(.+)$/i, (msg) ->
     date = new Date
     localSignature = convertLocal(msg.match[1], LOCAL_CONVERT_LIST)
     message = "現在の時刻は#{strTime(date)}です。[地域版: #{localSignature}]"

@@ -1,15 +1,17 @@
+###
+
 module.exports = (robot) ->
 
-  robot.hear /channel/i, (msg) ->
+  robot.hear /@channel/i, (msg) ->
 
-    if channel?
+    if @channel?
       comment = "dame"
     else
       comment = "ok"
 
     msg.send "@#{msg.message.user.name}さん" + comment
 
-###
+
     robot.hear /@channel:/i, (msg) ->
         comment = if @channel:? then "ok" else "dame"
         msg.send "@#{msg.message.user.name}さん" + comment

@@ -4,7 +4,7 @@
 # 身長と体重から、BMI指数と理想体重表示
 #
 # Commands:
-# bmi height weight - 身長と体重から、BMI指数と理想体重を表示する
+# bmi <height> <weight> - 身長と体重から、BMI指数と理想体重を表示する
 
 module.exports = (robot) ->
   robot.respond /bmi (\d+\.?\d*) (\d+\.?\d*)$/i, (msg) ->

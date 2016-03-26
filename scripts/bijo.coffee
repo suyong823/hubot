@@ -1,3 +1,13 @@
+# Description:
+#   美女の画像を表示
+#
+# Commands:
+#   bijo - 美女の画像をランダムで出力
+#   美女 - 美女の画像をランダムで出力
+#
+# Author:
+#   suyong
+
 module.exports = (robot) ->
   robot.hear /(bijo|美女)/i, (msg) ->
     timestamp = (new Date()).toISOString().replace(/[^0-9]/g, "")
