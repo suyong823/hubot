@@ -24,10 +24,10 @@ module.exports = (robot) ->
 #   test
 #
 # Commands:
-#   test - test!!!!!!
+#   test - test!?
 
     robot.hear /test/i, (msg) ->
-        msg.send "test!!!!!!"
+        msg.send "test!?"
 
 # Description:
 #   反応系
