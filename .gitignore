@@ -3,4 +3,7 @@ node_modules
 .hubot_history
 bin
 Procfile
-
+.editorconfig
+external-scripts.json
+hubot-scripts.json
+package.json
